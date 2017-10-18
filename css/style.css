@@ -1,0 +1,252 @@
+* {
+  margin: 1% 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.body {
+  max-width: 100%;
+}
+
+.header {
+  border-bottom: 3px solid #7d97ad;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 0;
+}
+
+.image-logo {
+  height: 80%;
+  width: 80%;
+  margin: 10px 0 -10px 0;
+}
+
+.name-title {
+  color: #2d3c49;
+  margin-right: -3px;
+  text-align: right;
+}
+
+.title {
+  margin: -10px 0 5px 0;
+}
+
+.image-banner {
+  display: flex;
+  margin-left: 0px;
+  width: 100%;
+}
+
+
+.featured-work {
+  color: #7d97ad;
+  font-size: 1.8em;
+  margin-left: 5px;
+  margin-bottom: -30px;
+  padding: 15px;
+}
+
+.projects-list {
+  color: #2d3c49;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.project {
+  display: flex;
+  margin: 2% -3%;
+  width: 100%;
+}
+
+.project-card {
+  list-style: none;
+  width: 100%;
+}
+
+.project-img {
+  width: 90%;
+  height: 80%;
+}
+
+.caption {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.link {
+  color: #2d3c49;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  color: #2d3c49;
+  text-align: center;
+}
+
+/* ------ Media Queries -------- */
+
+/* Breakpoint width 1134px - including Apple iPad Landscape orientation (1024px) */
+
+@media screen and (max-width: 1134px) {
+  .projects {
+    width: 92%;
+    margin-left: 3%;
+  }
+
+  .project {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .project-img {
+    width: 90%;
+    height: 200px;;
+  }
+
+  .caption {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .link p {
+    color: #2d3c49;
+    font-size: 0.85em;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+/* Breakpoint width 970px - including Apple iPad Portrait orientation (768px) */
+
+@media screen and (max-width: 970px) {
+  .projects {
+    width: 95%;
+    max-height: 100%;
+  }
+
+  .projects-list {
+    margin-left: -3%;
+  }
+
+  .project {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 0.1%;
+  }
+
+  .project-img {
+    width: 83%;
+  }
+
+  .caption {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .link p {
+    visibility: hidden;
+  }
+}
+
+/* Breakpoint width 732px - Nexus 5 Landscape orientation */
+
+@media screen and (max-width: 732px) {
+  .image-logo {
+    height: 50%;
+    width: 50%;
+  }
+
+  .name-title {
+    font-size: 0.7em;
+    margin-right: -3px;
+  }
+
+  .featured-work {
+    font-size: 1.2em;
+  }
+
+  .projects {
+    width: 92%;
+  }
+
+  .project {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .project-img {
+    width: 82%;
+  }
+
+  .caption {
+    font-size: 1em;
+  }
+
+  .link p {
+    visibility: hidden;
+  }
+}
+
+/* Breakpoint width 550px - including Nexus 5 Portrait orientation (412px) */
+
+@media screen and (max-width: 550px) {
+  .image-logo {
+    height: 50%;
+    width: 50%;
+    margin: 15px 0 -7px 0;
+  }
+
+  .name-title {
+    font-size: 0.6em;
+    margin-right: -3px;
+    margin-top: -7px;
+  }
+
+  .title {
+    margin: -10px 0 10px 0;
+  }
+
+  .featured-work {
+    font-size: 1.2em;
+  }
+
+  .projects {
+    width: 95%;
+  }
+
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: 5%;
+  }
+
+  .project-img {
+    height: 80%;
+  }
+
+  .caption {
+    font-size: 1em;
+  }
+
+  .link p {
+    visibility: hidden;
+  }
+
+  footer {
+    font-size: 0.7em;
+  }
+}
